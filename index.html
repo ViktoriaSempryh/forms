@@ -7,6 +7,59 @@
     <title>Forms</title>
 </head>
 <body>
-    
+    <fieldset>
+    <legend>Response form</legend>
+    <h1>Response form</h1>
+    <form  method="POST" action="https://formspree.io/ViktoriaSempryh-25@ukr.net">
+        <label for="user-name"> User name: </label>
+       <input id="user-name" type="text" placeholder="User name" name="user-name" required> 
+       <label>
+          Email: <input type="text" placeholder="Email" name="email" required>
+       </label>
+       <br><br>
+       <label>What do you choose:</label>
+        <label>
+          Film:<input type="radio" name="type" value="film">
+       </label>
+       <label>
+          Soap opera: <input type="radio" name="type" value="soap-opera">
+       </label>
+       <label>
+          Сartoon: <input type="radio" name="type" value="cartoon">
+       </label>
+       <br><br>
+       <label>Genre:
+       <select name="genre">
+           <option value="comedy">Comedy</option>
+           <option value="action-movie">Action movie</option>
+           <option value="detective">Detective</option>
+           <option value="baby">Baby</option>
+           <option value="drama">Drama</option>
+           <option value="crime">Crime</option>
+           <option value="adventure">Adventure</option>
+           <option value="fantasy">Fantasy</option>
+        </select>
+        </label>
+        <br><br>
+        <label>Language:
+        <select name="lang">
+           <option value="uk">Ukrainian</option>
+           <option value="en">English</option>
+         </select>
+         </label>
+        <br><br>
+        <label>Name of Film:
+            <textarea type="text" name="name-of-film" placeholder="Name of film" row="20" cols="60" required></textarea>
+        </label>
+        <br><br>
+         <label>Response:
+            <textarea type="text" name="response" placeholder="Your response" row="150" cols="100" required></textarea>
+        </label>
+       <br><br>
+       <input type="submit">
+       <input type="reset">
+
+    </form>
+    </<fieldset>
 </body>
 </html>
